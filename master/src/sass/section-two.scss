@@ -1,0 +1,174 @@
+.section-two {
+  padding-top: 40px;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 13px;
+}
+.section-two__list-title {
+  @extend %uppercase;
+  font-size: 9px;
+}
+ul.section-two--color-marker {
+  color: $accent-color;
+}
+li .section-two--color-li {
+  color: $base-color-first;
+}
+.section-two__text-color {
+  color: $brand-color;
+}
+.section-two__slesh::before {
+  content: "/";
+  font-size: 26px;
+  position: absolute;
+  top: 8px;
+  left: -8px;
+}
+.section-two__title {
+  @extend %title;
+  @extend %uppercase;
+  font-weight: 700;
+  &--center {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+.section-two__sub-title--after {
+  padding-left: 20px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0.5em;
+    transform: translate(0, 50%);
+    left: 0px;
+    height: 2px;
+    width: 15px;
+    background: #000;
+  }
+  &:after {
+    content: "STAP";
+    position: absolute;
+    transform: rotate(90deg);
+    top: 20px;
+    left: 22px;
+    font-family: $main-font;
+    font-weight: 800;
+    font-size: 40px;
+    opacity: 0.05;
+  }
+}
+.section__two-fontext {
+  font-size: 140px;
+  position: absolute;
+  opacity: 0.05;
+  top: 20px;
+  left: -20px;
+}
+.section-two__positon-numbers {
+  position: relative;
+}
+.section-two__numbers {
+  position: absolute;
+  color: $base-color-first;
+  top: -10px;
+  left: -32px;
+  font-size: 14px;
+  font-family: $main-font;
+  font-weight: 700;
+}
+.section-two__text {
+  &--accent {
+    color: $brand-color;
+    text-align: center;
+  }
+  &--mark-text {
+    font-weight: 800;
+  }
+  &:before {
+    content: "";
+    // position: absolute;
+    // top: 42px;
+    // left: -10px;
+    height: 2px;
+    width: 15px;
+    background: #000;
+    font-size: 32px;
+    display: inline-block;
+    margin-right: -10%;
+  }
+}
+// @media (max-width: 479px) {
+//   .section-two__text::before {
+//     top: 59px;
+//     left: -12px;
+//     height: 2px;
+//     width: 14px;
+//   }
+// }
+// @media (min-width: 480px) {
+//   .section-two__text::before {
+//     top: 59px;
+//     left: -10px;
+//     height: 2px;
+//     width: 14px;
+//   }
+// }
+@media (max-width: 767px) {
+  .section-two__add-photo {
+    display: none;
+  }
+}
+.section-two__add-text {
+  transform: rotate(90deg);
+  font-size: 140px;
+  opacity: 0.05;
+  position: absolute;
+  top: 250px;
+  @extend %uppercase;
+  .section-two__title {
+    font-size: 48pt;
+  }
+}
+@media (min-width: 768px) {
+  .section-two__title {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+  .section-two__text {
+    &--accent {
+      color: $brand-color;
+      text-align: center;
+    }
+    &--mark-text {
+      font-weight: 800;
+    }
+    & {
+      font-weight: 400;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 105px;
+        left: -15px;
+        height: 4px;
+        width: 29px;
+        background: #000;
+      }
+    }
+  }
+  p.section-two__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .section-two__flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: space-between;
+  }
+  .list__item {
+    width: 120px;
+  }
+}

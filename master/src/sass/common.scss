@@ -1,0 +1,20 @@
+.black-bg-text {
+    background: $base-color-first;
+    color: $base-color-second;
+    
+}
+.blue-bg-text {
+    background: $accent-color;
+    color: $base-color-first;
+}
+
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.flex {
+    display: flex;
+}
